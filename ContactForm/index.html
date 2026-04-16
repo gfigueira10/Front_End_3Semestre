@@ -59,7 +59,7 @@
                         <input class="form-contact__input form-contact__input--terco" type="number" id="ddd"
                             name="ddd" placeholder="ddd">
 
-                        <input class="form-contact__input form-contact__input--terco" type="number" id="numero"
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="numero"
                             name="numero" placeholder="ex: 99999-9999">
                     </div>
                 </div>
@@ -71,14 +71,14 @@
                         <label class="form-contact__label" for="endereco">Endereço</label>
                     </div>
                     <div class="form-contact__col-b">
-                        <input class="form-contact__input form-contact__input--quarto" type="text" id="Cep" name="Cep"
-                            placeholder="Cep: ">
+                        <input class="form-contact__input form-contact__input--quarto" type="text" id="cep" name="cep"
+                            placeholder="Cep: " maxlength="8" onblur="BuscarEndereco(this.value)">
 
                         <input class="form-contact__input form-contact__input--metade" type="text" id="rua"
                             name="rua" placeholder="Rua: ">
 
-                        <input class="form-contact__input form-contact__input--quarto" type="number" id="numero"
-                            name="numero" placeholder="Numero: ">
+                        <input class="form-contact__input form-contact__input--quarto" type="number" id="numerocasa"
+                            name="numerocasa" placeholder="Numero: ">
                     </div>
                 </div>
 
@@ -109,8 +109,8 @@
                         <label class="form-contact__label" for="nome"></label>
                     </div>
                     <div class="form-contact__col-b">
-                        <input class="form-contact__input form-contact__input--terco" type="text" id="nome" name="nome"
-                            placeholder="Nome">
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="apto" name="apto"
+                            placeholder="apto, bloco">
                     </div>
                 </div>
 
@@ -130,7 +130,7 @@
                     <div class="form-contact__col-a"></div>
 
                     <div class="form-contact__col-b form-contact__col-b--botao">
-                        <button onclick="validarFormulario()" type="submit">Cadastrar</button>
+                        <button onclick="validarFormulario()" type="button">Cadastrar</button>
 
                         <button type="reset">Limpar</button>
                     </div>
