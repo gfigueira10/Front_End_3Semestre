@@ -89,5 +89,21 @@
       "id": "IrziUjSYzTk"
     }
   ],
+  "calculadora": [
+    {
+      "n1": 5,
+      "n2": 5,
+      "op": "soma",
+      "resultado": "10.00",
+      "id": "DE_Ady5z6ec"
+    },
+    {
+      "n1": 60,
+      "n2": 7,
+      "op": "soma",
+      "resultado": "67.00",
+      "id": "uNDGt2HreQs"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }
